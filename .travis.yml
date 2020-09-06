@@ -59,4 +59,11 @@ after_success:
       else
         echo "This is a PR. No coverage generated."
       fi
+      
+      notifications: # set notification options
+  email:
+    on_success: change
+    on_failure: always
+    recipients:
+      - yauhong1999@hotmail.com
 
